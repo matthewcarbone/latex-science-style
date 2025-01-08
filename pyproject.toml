@@ -15,7 +15,7 @@ build-backend = "hatchling.build"
 path = "latex_utils/_version.py"
 
 [project.scripts]
-composer = "latex_utils.entrypoint:entrypoint"
+latex-utils-write-all = "latex_utils.entrypoint:entrypoint"
 
 [tool.ruff]
 line-length = 80
