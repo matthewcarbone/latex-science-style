@@ -1,2 +1,2 @@
-# latex-science-style
-A catch-all template for scientific manuscripts, with an initial focus on standard arXiv formats, Physical Review journals, etc.
+# latex-utils
+A catch-all set of utilities and style files for Latex.
