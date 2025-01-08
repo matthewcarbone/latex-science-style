@@ -1,7 +1,28 @@
 [project]
 name = "latex_utils"
-version = "0.1.0"
 description = "Latex utilities"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+dynamic = ["version"]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "latex_utils/_version.py"
+
+[project.scripts]
+composer = "latex_utils.entrypoint:entrypoint"
+
+[tool.ruff]
+line-length = 80
+exclude = ["latex_utils/_version.py"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 60
